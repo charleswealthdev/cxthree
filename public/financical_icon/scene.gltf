@@ -1,0 +1,787 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 27394,
+      "max": [
+        0.23022189736366272,
+        1.09945547580719,
+        0.11795993149280548
+      ],
+      "min": [
+        -0.20540419220924377,
+        0.026749538257718086,
+        -0.13553936779499054
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 328728,
+      "componentType": 5126,
+      "count": 27394,
+      "max": [
+        0.9999999403953552,
+        0.9999359846115112,
+        0.9999784827232361
+      ],
+      "min": [
+        -0.9999997019767761,
+        -1.0,
+        -0.9999791979789734
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 164352,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 657456,
+      "componentType": 5126,
+      "count": 5058,
+      "max": [
+        0.15984073281288147,
+        0.5256731510162354,
+        0.12579432129859924
+      ],
+      "min": [
+        -0.161605104804039,
+        -0.188639834523201,
+        -0.12575803697109222
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 718152,
+      "componentType": 5126,
+      "count": 5058,
+      "max": [
+        0.9997372031211853,
+        0.9995704293251038,
+        0.9999979734420776
+      ],
+      "min": [
+        -0.9997413754463196,
+        -0.9996312856674194,
+        -0.9999963641166687
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 657408,
+      "componentType": 5125,
+      "count": 29184,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 778848,
+      "componentType": 5126,
+      "count": 4546,
+      "max": [
+        0.18251176178455353,
+        0.44992199540138245,
+        0.1528085172176361
+      ],
+      "min": [
+        -0.18386849761009216,
+        -0.31006142497062683,
+        -0.15260650217533112
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 833400,
+      "componentType": 5126,
+      "count": 4546,
+      "max": [
+        0.999996542930603,
+        0.9999999403953552,
+        0.9999980926513672
+      ],
+      "min": [
+        -0.9999964833259583,
+        -1.0,
+        -0.9999993443489075
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 774144,
+      "componentType": 5125,
+      "count": 26112,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 887952,
+      "componentType": 5126,
+      "count": 9634,
+      "max": [
+        0.5091095566749573,
+        0.050534769892692566,
+        0.5091095566749573
+      ],
+      "min": [
+        -0.5091095566749573,
+        -0.05000000074505806,
+        -0.5091095566749573
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1003560,
+      "componentType": 5126,
+      "count": 9634,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 878592,
+      "componentType": 5125,
+      "count": 44976,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1119168,
+      "componentType": 5126,
+      "count": 9634,
+      "max": [
+        0.5091095566749573,
+        0.050534769892692566,
+        0.5091095566749573
+      ],
+      "min": [
+        -0.5091095566749573,
+        -0.05000000074505806,
+        -0.5091095566749573
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1234776,
+      "componentType": 5126,
+      "count": 9634,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1058496,
+      "componentType": 5125,
+      "count": 44976,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1350384,
+      "componentType": 5126,
+      "count": 6608,
+      "max": [
+        0.5091095566749573,
+        0.050534769892692566,
+        0.5091095566749573
+      ],
+      "min": [
+        -0.5091095566749573,
+        -0.05000000074505806,
+        -0.5091095566749573
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1429680,
+      "componentType": 5126,
+      "count": 6608,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1238400,
+      "componentType": 5125,
+      "count": 29220,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1508976,
+      "componentType": 5126,
+      "count": 6608,
+      "max": [
+        0.5091095566749573,
+        0.050534769892692566,
+        0.5091095566749573
+      ],
+      "min": [
+        -0.5091095566749573,
+        -0.05000000074505806,
+        -0.5091095566749573
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1588272,
+      "componentType": 5126,
+      "count": 6608,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1355280,
+      "componentType": 5125,
+      "count": 29220,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Grindi (https://sketchfab.com/ranok777)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/financical-icon-cupped-hand-with-coins-a33c0046abcc4809b830abc1ca0fb4a2",
+      "title": "Financical icon - cupped hand with coins"
+    },
+    "generator": "Sketchfab-15.0.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1472160,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1667568,
+      "byteOffset": 1472160,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 3139728,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_specular"
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 1.0
+        }
+      },
+      "name": "hand",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.922379,
+          0.523982,
+          0.300623,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.69186
+      }
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 1.0
+        }
+      },
+      "name": "sleeve",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0779701,
+          0.3315,
+          0.8,
+          1.0
+        ],
+        "metallicFactor": 0.0
+      }
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 1.0
+        }
+      },
+      "name": "sleeve_2",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0216831,
+          0.0801638,
+          0.183262,
+          1.0
+        ],
+        "metallicFactor": 0.0
+      }
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 1.0
+        }
+      },
+      "name": "coin",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.407264,
+          0.0,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.092683
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Object_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Object_1",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 3
+          },
+          "indices": 5,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Object_2",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 7,
+            "POSITION": 6
+          },
+          "indices": 8,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Object_3",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 10,
+            "POSITION": 9
+          },
+          "indices": 11,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Object_4",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 13,
+            "POSITION": 12
+          },
+          "indices": 14,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Object_5",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 16,
+            "POSITION": 15
+          },
+          "indices": 17,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Object_6",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 19,
+            "POSITION": 18
+          },
+          "indices": 20,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "root"
+    },
+    {
+      "children": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "GLTF_SceneRootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        -1.4885305610334854e-07,
+        -3.0584370314112874e-08,
+        -0.9999999999999885,
+        0.0,
+        -0.999944853893747,
+        -0.01050186513865592,
+        1.4916604040848824e-07,
+        0.0,
+        -0.010501865138660416,
+        0.9999448538937576,
+        -2.9019448843925488e-08,
+        0.0,
+        0.4786890745162964,
+        0.3270537257194519,
+        0.15505225956439972,
+        1.0
+      ],
+      "name": "hand.001_2"
+    },
+    {
+      "mesh": 0,
+      "name": "Object_4"
+    },
+    {
+      "children": [
+        6
+      ],
+      "matrix": [
+        -1.4885305610334854e-07,
+        -3.0584370314112874e-08,
+        -0.9999999999999885,
+        0.0,
+        -0.999944853893747,
+        -0.01050186513865592,
+        1.4916604040848824e-07,
+        0.0,
+        -0.010501865138660416,
+        0.9999448538937576,
+        -2.9019448843925488e-08,
+        0.0,
+        0.4786890745162964,
+        0.3270537257194519,
+        0.15505225956439972,
+        1.0
+      ],
+      "name": "sleeve.001_3"
+    },
+    {
+      "mesh": 1,
+      "name": "Object_6"
+    },
+    {
+      "children": [
+        8
+      ],
+      "matrix": [
+        -1.4885305610334854e-07,
+        -3.0584370314112874e-08,
+        -0.9999999999999885,
+        0.0,
+        -0.999944853893747,
+        -0.01050186513865592,
+        1.4916604040848824e-07,
+        0.0,
+        -0.010501865138660416,
+        0.9999448538937576,
+        -2.9019448843925488e-08,
+        0.0,
+        0.4786890745162964,
+        0.3270537257194519,
+        0.15505225956439972,
+        1.0
+      ],
+      "name": "sleeve_2.001_4"
+    },
+    {
+      "mesh": 2,
+      "name": "Object_8"
+    },
+    {
+      "children": [
+        10
+      ],
+      "matrix": [
+        0.17341307667968742,
+        0.040233781965416104,
+        -0.008753996252576174,
+        0.0,
+        0.00874672295958984,
+        0.0010329771519861316,
+        0.1780166077106784,
+        0.0,
+        0.040235360423481886,
+        -0.1736308023685886,
+        -0.0009694089854590661,
+        0.0,
+        -0.4685770571231842,
+        0.5285593867301941,
+        0.14485232532024384,
+        1.0
+      ],
+      "name": "coin_S.002_5"
+    },
+    {
+      "mesh": 3,
+      "name": "Object_10"
+    },
+    {
+      "children": [
+        12
+      ],
+      "matrix": [
+        6.820548375145632e-10,
+        -3.693561220952967e-09,
+        -0.17823433876037592,
+        0.0,
+        -0.06365507424556702,
+        0.1664797616412872,
+        -3.693561220952967e-09,
+        0.0,
+        0.16647976164128722,
+        0.06365507424556702,
+        -6.820548177265765e-10,
+        0.0,
+        -0.2879289984703064,
+        0.32029956579208374,
+        0.16003163158893585,
+        1.0
+      ],
+      "name": "coin_S.001_6"
+    },
+    {
+      "mesh": 4,
+      "name": "Object_12"
+    },
+    {
+      "children": [
+        14
+      ],
+      "matrix": [
+        0.17671911691677508,
+        0.021475583542021975,
+        -0.00875400142981906,
+        0.0,
+        0.008807025609098462,
+        9.2563191938651e-05,
+        0.17801660753177526,
+        0.0,
+        0.02145389520237975,
+        -0.1769357948285601,
+        -0.0009693885582778498,
+        0.0,
+        -0.3471594750881195,
+        0.47746777534484863,
+        0.2412753850221634,
+        1.0
+      ],
+      "name": "coin_B.004_7"
+    },
+    {
+      "mesh": 5,
+      "name": "Object_14"
+    },
+    {
+      "children": [
+        16
+      ],
+      "matrix": [
+        0.1442313958867388,
+        -0.10440677163829787,
+        -0.008000292381069854,
+        0.0,
+        0.008641165720719997,
+        -0.0017035056773710214,
+        0.17801660919290685,
+        0.0,
+        -0.10435569339040769,
+        -0.14444307458512956,
+        0.0036833374472598737,
+        0.0,
+        -0.29103532433509827,
+        0.6199184656143188,
+        0.05965682864189148,
+        1.0
+      ],
+      "name": "coin_B.005_8"
+    },
+    {
+      "mesh": 6,
+      "name": "Object_16"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

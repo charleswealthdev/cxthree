@@ -1,0 +1,11 @@
+Model Information:
+* title:	Cinque Terre
+* source:	https://sketchfab.com/3d-models/cinque-terre-40bd14ec1056430ea769def0bb74aec4
+* author:	Kristian LaGrange (https://sketchfab.com/kristian123)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Cinque Terre" (https://sketchfab.com/3d-models/cinque-terre-40bd14ec1056430ea769def0bb74aec4) by Kristian LaGrange (https://sketchfab.com/kristian123) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
