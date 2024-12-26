@@ -4,6 +4,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader.js';
 import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
  import gsap from 'gsap'; 
+ import TWEEN from '@tweenjs/tween.js';
 
 export function createHeroScene(container){
     const raycaster = new THREE.Raycaster();
@@ -60,7 +61,8 @@ loadingMessage.style.transition = 'opacity 0.5s ease'; // Transition for opacity
 document.body.appendChild(loadingMessage);
 
 window.addEventListener('load', () => {
-  
+
+  loadingMessage.style.opacity = '1'; // Initially hidden with opacity
   setTimeout(() => {
       loadingMessage.style.opacity = '0'; // Fade out by changing opacity to 0
      
@@ -72,7 +74,6 @@ const loadingManager = new THREE.LoadingManager();
 
 // Show loading screen while assets are loading
 loadingManager.onStart = () => {
-  loadingMessage.style.opacity = '1'; // Initially hidden with opacity
 
 };
 
@@ -81,9 +82,8 @@ loadingManager.onLoad = () => {
     console.log('All assets loaded');
     const preloader = document.getElementById('preloader');
     preloader.style.display = 'none'; // Hide preloader
-    isPlaying= true;
     // loadingMessage.style.opacity = '0';
-    
+    isPlaying=true
 };
 
 // Track loading progress
@@ -91,7 +91,7 @@ loadingManager.onProgress = (url, itemsLoaded, itemsTotal) => {
  
     console.log(`Loaded ${itemsLoaded} of ${itemsTotal} files: ${url}`);
     const progress = (itemsLoaded / itemsTotal) * 100;
-    loadingMessage.style.opacity = '1'; // Initially hidden with opacity
+  
     document.getElementById('progress-bar').style.width = `${progress}%`;
    
 };
@@ -636,6 +636,54 @@ controls.touches = {
 	TWO: THREE.TOUCH.DOLLY_PAN
 }
 
+camera.position.z = 5;
+
+// Variables for shake effect
+let shakeIntensity = 0;
+let isShaking = false;
+
+// Function to create a shake effect on the box3
+function shakeEffect() {
+    // If already shaking, do nothing
+    if (isShaking) return;
+
+    isShaking = true;
+
+    // Define the shake movement (a small random translation for shake)
+    new TWEEN.Tween(box3.position)
+        .to({ x: box3.position.x + Math.random() * 0.2 - 0.1, y: box3.position.y + Math.random() * 0.2 - 0.1 }, 100)
+        .easing(TWEEN.Easing.Quadratic.Out)
+        .onComplete(() => {
+            // Repeat the shake effect
+            setTimeout(() => {
+                isShaking = false;
+            }, 100); // Allow a small delay before allowing the shake to trigger again
+        })
+        .start();
+}
+
+// Function to listen for device motion (shake)
+function listenForDeviceShake() {
+    if (window.DeviceMotionEvent) {
+        window.addEventListener('devicemotion', (event) => {
+            const accX = event.accelerationIncludingGravity.x;
+            const accY = event.accelerationIncludingGravity.y;
+            const accZ = event.accelerationIncludingGravity.z;
+
+            // Trigger shake when a large acceleration change is detected
+            if (Math.abs(accX) > 15 || Math.abs(accY) > 15 || Math.abs(accZ) > 15) {
+                shakeEffect();
+            }
+        });
+    } else {
+        console.log("DeviceMotionEvent is not supported on this device.");
+    }
+}
+
+// Listen for shake gestures
+listenForDeviceShake();
+
+
 
 const clock = new THREE.Clock()
 
@@ -650,7 +698,7 @@ const clock = new THREE.Clock()
      box3.rotation.y = elapsedTime;
   }
    
-
+  TWEEN.update(); 
     renderer.render(scene, camera);
 
 
