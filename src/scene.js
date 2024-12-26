@@ -81,6 +81,7 @@ loadingManager.onLoad = () => {
     console.log('All assets loaded');
     const preloader = document.getElementById('preloader');
     preloader.style.display = 'none'; // Hide preloader
+    isPlaying= true;
     // loadingMessage.style.opacity = '0';
     
 };
@@ -120,7 +121,7 @@ function loadAndPlaySong(songPath) {
 }
 
 // Default song
-const defaultSong = '/movement-200697.mp3'; // Set default song here
+const defaultSong = '/evolution.mp3'; // Set default song here
 loadAndPlaySong(defaultSong);
 
 // 2. Create a container for the music controls
@@ -143,7 +144,7 @@ stopButton.style.height = '50px';
 stopButton.style.borderRadius = '50%';
 stopButton.style.fontSize = '24px';
 stopButton.style.border = '2px solid rgba(255, 255, 255, 0.7)'; // Light border
-stopButton.style.backgroundColor = 'rgba(0, 0, 0, 0.2)'; // Transparent background
+stopButton.style.backgroundColor = 'rgba(255, 255, 255, 0.1)'; // Transparent background
 stopButton.style.color = 'white';
 stopButton.style.cursor = 'pointer';
 stopButton.style.transition = 'transform 0.3s ease, background-color 0.3s ease';
@@ -201,7 +202,7 @@ songSelector.addEventListener('change', (event) => {
     const selectedSong = event.target.value;
     loadAndPlaySong(selectedSong); // Play selected song immediately
     stopButton.innerHTML = '⏹️'; // Ensure the icon is set to stop after song change
-    isPlaying = false; // Ensure music is in the playing state
+    isPlaying = true; // Ensure music is in the playing state
 });
 
 // Media query for responsiveness (Optional)
