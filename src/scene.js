@@ -10,6 +10,7 @@ export function createHeroScene(container){
     const raycaster = new THREE.Raycaster();
     const mouse = new THREE.Vector2();
 
+    let isFirstClick = true; 
 // 1. Stylish Interactive Prompt Div
 const interactionPrompt = document.createElement('div');
 interactionPrompt.innerHTML = 'Touch to interact with our world 🎮';
@@ -119,6 +120,8 @@ function loadAndPlaySong(songPath) {
         sound.play(); // Play the music
     });
 }
+
+
 
 // Default song
 const defaultSong = '/evolution.mp3'; // Set default song here
@@ -566,20 +569,40 @@ adjustButtonStyles();
       window.open('https://chat.whatsapp.com/L64NIIlm9gKGehkky4wZp0', '_blank');
     });
 
-  exploreButton.addEventListener('click', () => {
-    gsap.fromTo(camera.position, 
-      { x: -4, y: 8, z: 61 }, // Start scale
-      { x: -12, y: 10, z: -10, duration: 10, ease: "elastic.out" } // Grow and bounce
-    );
+ // Explore button click listener
+exploreButton.addEventListener('click', () => {
+  if (isFirstClick) {
+      // Show the interaction prompt once after clicking "Explore"
+      interactionPrompt.style.display = 'block';
+      
+      // Hide the interaction prompt after a delay
+      setTimeout(() => {
+          interactionPrompt.style.opacity = '0';
+          setTimeout(() => {
+              interactionPrompt.style.display = 'none'; // Hide prompt after fading
+          }, 500); // Delay before hiding
+      }, 3000); // Show prompt for 3 seconds
 
-    interactionPrompt.style.display = 'block';
+      // Disable (lock) the explore button
+      exploreButton.disabled = true;
+      exploreButton.style.cursor = 'not-allowed'; // Change cursor to indicate the button is disabled
 
-    // Optional: Add animation or a bounce effect to the message to make it noticeable
-    gsap.fromTo(interactionPrompt, 
-        { scale: 1, opacity: 0 }, 
-        { scale: 1.2, opacity: 1, duration: 0.5, yoyo: true, repeat: 2 }
-    );
-  });
+      isFirstClick = false; // After the first click, set to false
+  }
+
+  // Camera animation
+  gsap.fromTo(camera.position, 
+      { x: -4, y: 8, z: 61 }, // Start position
+      { x: -12, y: 10, z: -10, duration: 10, ease: "elastic.out" } // End position with bounce effect
+  );
+
+  // Interaction prompt animation
+  gsap.fromTo(interactionPrompt, 
+      { scale: 1, opacity: 0 }, // Initial state
+      { scale: 1.2, opacity: 1, duration: 0.5, yoyo: true, repeat: 2 } // Animation with bounce effect
+  );
+});
+
 
 // Enable XR on the renderer
 renderer.xr.enabled = true;
@@ -698,7 +721,7 @@ const clock = new THREE.Clock()
      box3.rotation.y = elapsedTime;
   }
    
-  TWEEN.update(); 
+  TWEEN.update();
     renderer.render(scene, camera);
 
 
