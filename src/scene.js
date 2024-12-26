@@ -60,7 +60,7 @@ loadingMessage.style.transition = 'opacity 0.5s ease'; // Transition for opacity
 document.body.appendChild(loadingMessage);
 
 window.addEventListener('load', () => {
-  loadingMessage.style.opacity = '1'; // Fade in by changing opacity to 1
+  
   setTimeout(() => {
       loadingMessage.style.opacity = '0'; // Fade out by changing opacity to 0
      
