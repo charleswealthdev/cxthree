@@ -194,13 +194,8 @@ songSelector.innerHTML = `
                       <option value="/african-percussions-8178.mp3">African Percussions</option>
                       <option value="/inspiring-african-music-255647.mp3">Inspiring African music</option>
                         <option value="/amapiano-background-lofi-african-music-244452.mp3">Amapiano African music</option>
-                      <option value="/game-over-275058.mp3">Game Over</option>
-                       <option value="/the-afrobeat-153058.mp3">The Afro</option>
-                          
-                      
-                  
-            
-`;
+                          <option value="/game-over-275058.mp3">Game Over</option>
+                            <option value="/the-afrobeat-153058.mp3">The Afro</option>`;
 songSelector.style.padding = '10px';
 songSelector.style.borderRadius = '5px';
 songSelector.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
@@ -339,7 +334,7 @@ textureLoader.load('/cx3.jpg', (texture) => {
   box3.scale.setScalar(2);
   box3.position.set(0, 2, 0); // Center sphere
   box3.castShadow = true;
-  box3.userData = { name: "CX3", description: " Building the biggest community of Web3 lovers,game lovers and VR lovers around the world" };
+  box3.userData = { name: "CX3", description: "Discover a world where Web3, gaming, and VR meet. Join our growing community of innovators and explorers" };
 
   // Add the sphere to the scene
   scene.add(box3);
@@ -532,7 +527,7 @@ const adjustButtonStyles = () => {
   const screenWidth = window.innerWidth;
 
   if (screenWidth < 768) { // Mobile screens
-      [ xButton, joinButton ,vrButton, exploreButton].forEach((button, index) => {
+      [xButton, joinButton ,vrButton, exploreButton].forEach((button, index) => {
           button.style.fontSize = '0.9rem';
           button.style.padding = '0.8rem 1.5rem';
           button.style.bottom = `${15 + index * 10}%`; // Stack buttons vertically
