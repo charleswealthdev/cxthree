@@ -194,7 +194,9 @@ songSelector.innerHTML = `
                       <option value="/african-percussions-8178.mp3">African Percussions</option>
                       <option value="/inspiring-african-music-255647.mp3">Inspiring African music</option>
                         <option value="/amapiano-background-lofi-african-music-244452.mp3">Amapiano African music</option>
-                      
+                      <option value="/game-over-275058.mp3">Game Over</option>
+                       <option value="/the-afrobeat-153058.mp3.mp3">The Afro</option>
+                          
                       
                   
             
@@ -595,7 +597,7 @@ exploreButton.addEventListener('click', () => {
   if (isFirstClick) {
       // Show the interaction prompt once after clicking "Explore"
       interactionPrompt.style.display = 'block';
-      
+
       // Hide the interaction prompt after a delay
       setTimeout(() => {
           interactionPrompt.style.opacity = '0';
