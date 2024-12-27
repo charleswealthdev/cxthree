@@ -124,7 +124,7 @@ function loadAndPlaySong(songPath) {
 
 
 // Default song
-const defaultSong = '/evolution.mp3'; // Set default song here
+const defaultSong = '/inspiring-african-music-255647.mp3'; // Set default song here
 loadAndPlaySong(defaultSong);
 
 // 2. Create a container for the music controls
@@ -190,6 +190,14 @@ songSelector.innerHTML = `
           <option value="/paperback.mp3">Paperback</option>
              <option value="/stylish-deep-electronic-262632.mp3">Deep electronic</option>
                 <option value="/vlog-music-beat-trailer-showreel-promo-background-intro-theme-274290.mp3">Vlog music beat</option>
+                  <option value="/african-night-171020.mp3">African Night</option>
+                      <option value="/african-percussions-8178.mp3">African Percussions</option>
+                      <option value="/inspiring-african-music-255647.mp3">Inspiring African music</option>
+                        <option value="/amapiano-background-lofi-african-music-244452.mp3">Amapiano African music</option>
+                      
+                      
+                  
+            
 `;
 songSelector.style.padding = '10px';
 songSelector.style.borderRadius = '5px';
@@ -507,19 +515,22 @@ const createStyledButton = (text, positionBottom, positionLeft) => {
 // Create and style buttons
 
 const exploreButton = createStyledButton('Explore', '5%', '30%');
-const vrButton = createStyledButton('View in VR', '5%', '70%');
-const joinButton = createStyledButton('Join Community', '5%', '50%');
+const vrButton = createStyledButton('View in VR', '5%', '50%');
+const joinButton = createStyledButton('Join Community', '5%', '70%');
+const xButton = createStyledButton('Follow on X', '5%', '90%');
+
 // Append buttons to the body
 document.body.appendChild(exploreButton);
-document.body.appendChild(joinButton);
  document.body.appendChild(vrButton);
+ document.body.appendChild(joinButton);
+ document.body.appendChild(xButton)
 // document.body.appendChild(vrButton.createButton(renderer));
 // Adjust button styles for responsiveness
 const adjustButtonStyles = () => {
   const screenWidth = window.innerWidth;
 
   if (screenWidth < 768) { // Mobile screens
-      [joinButton, exploreButton, vrButton].forEach((button, index) => {
+      [ xButton, joinButton ,vrButton, exploreButton].forEach((button, index) => {
           button.style.fontSize = '0.9rem';
           button.style.padding = '0.8rem 1.5rem';
           button.style.bottom = `${15 + index * 10}%`; // Stack buttons vertically
@@ -530,26 +541,31 @@ const adjustButtonStyles = () => {
       joinButton.style.bottom = '7%';
       exploreButton.style.bottom = '7%';
       vrButton.style.bottom = '7%';
+      xButton.style.bottom = '7%';
 
-      joinButton.style.left = '50%';
-      exploreButton.style.left = '35%';
-      vrButton.style.left = '65%';
+      joinButton.style.left = '60%';
+      exploreButton.style.left = '20%';
+      vrButton.style.left = '40%';
+      xButton.style.left = '80%';
 
-      [joinButton, exploreButton, vrButton].forEach((button) => {
-          button.style.fontSize = '1rem';
-          button.style.padding = '1rem 2rem';
+      [joinButton, exploreButton, vrButton, xButton].forEach((button) => {
+          button.style.fontSize = '0.9rem';
+          button.style.padding = '1rem 1.5rem';
           button.style.transform = 'translateX(-50%)';
       });
   } else { // Desktop screens
       joinButton.style.bottom = '5%';
       exploreButton.style.bottom = '5%';
       vrButton.style.bottom = '5%';
+      xButton.style.bottom = '5%';
 
-      joinButton.style.left = '50%';
-      exploreButton.style.left = '30%';
-      vrButton.style.left = '70%';
+      joinButton.style.left = '60%';
+      exploreButton.style.left = '20%';
+      vrButton.style.left = '40%';
+      xButton.style.left = '80%';
 
-      [joinButton, exploreButton, vrButton].forEach((button) => {
+
+      [joinButton, exploreButton, vrButton,xButton].forEach((button) => {
           button.style.fontSize = '1.2rem';
           button.style.padding = '1.2rem 2.5rem';
           button.style.transform = 'translateX(-50%)';
@@ -564,6 +580,11 @@ window.addEventListener('resize', adjustButtonStyles);
 adjustButtonStyles();
 
 
+
+    xButton.addEventListener('click', ()=> {
+
+      window.open('https://x.com/cbichain', '_blank')
+    })
 
     joinButton.addEventListener('click', () => {
       window.open('https://chat.whatsapp.com/L64NIIlm9gKGehkky4wZp0', '_blank');
@@ -699,7 +720,7 @@ function listenForDeviceShake() {
             }
         });
     } else {
-        console.log("DeviceMotionEvent is not supported on this device.");
+        alert("DeviceMotionEvent is not supported on this device.");
     }
 }
 
