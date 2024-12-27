@@ -195,7 +195,7 @@ songSelector.innerHTML = `
                       <option value="/inspiring-african-music-255647.mp3">Inspiring African music</option>
                         <option value="/amapiano-background-lofi-african-music-244452.mp3">Amapiano African music</option>
                       <option value="/game-over-275058.mp3">Game Over</option>
-                       <option value="/the-afrobeat-153058.mp3.mp3">The Afro</option>
+                       <option value="/the-afrobeat-153058.mp3">The Afro</option>
                           
                       
                   
