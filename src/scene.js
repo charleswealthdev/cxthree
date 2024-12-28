@@ -334,7 +334,7 @@ textureLoader.load('/cx3.jpg', (texture) => {
   box3.scale.setScalar(2);
   box3.position.set(0, 2, 0); // Center sphere
   box3.castShadow = true;
-  box3.userData = { name: "CX3", description: "Discover a world where Web3, gaming, and VR meet. Join our growing community of innovators and explorers" };
+  box3.userData = { name: "CX3", description: "Experience the fusion of Web3, gaming, and VR. Stay tuned for the revolution" };
 
   // Add the sphere to the scene
   scene.add(box3);
