@@ -285,7 +285,7 @@ scene.add(directionalLight);
 //   camera.position.y = Math.max(camera.position.y, planeHeight + 1); // Keep camera above the ground
   
   // camecamera.lookAt(0,0,0)ra.lookAt(cube.position)
-  camera.position.set( -4,  8,  61 )
+  camera.position.set( -4,  8,  50 )
   camera.lookAt(new THREE.Vector3(0,3,0))
   scene.add(camera)
 
