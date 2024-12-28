@@ -255,7 +255,7 @@ mediaQuery.addEventListener('change', adjustResponsiveLayout);
     antialias:true
 })
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-camera.position.z = 5;
+// camera.position.z = 61;
 
 // Load and play audio
 
@@ -530,7 +530,7 @@ const adjustButtonStyles = () => {
       [xButton, joinButton ,vrButton, exploreButton].forEach((button, index) => {
           button.style.fontSize = '0.9rem';
           button.style.padding = '0.8rem 1.5rem';
-          button.style.bottom = `${15 + index * 10}%`; // Stack buttons vertically
+          button.style.bottom = `${15 + index * 8.4}%`; // Stack buttons vertically
           button.style.left = '50%'; // Center align on smaller screens
           button.style.transform = 'translateX(-50%)';
       });
@@ -677,7 +677,7 @@ controls.touches = {
 	TWO: THREE.TOUCH.DOLLY_PAN
 }
 
-camera.position.z = 5;
+// camera.position.z = 61;
 
 // Variables for shake effect
 let shakeIntensity = 0;
