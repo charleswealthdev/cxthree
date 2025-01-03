@@ -511,23 +511,25 @@ const createStyledButton = (text, positionBottom, positionLeft) => {
 
 // Create and style buttons
 
-const exploreButton = createStyledButton('Explore', '5%', '30%');
-const vrButton = createStyledButton('View in VR', '5%', '50%');
-const joinButton = createStyledButton('Join Community', '5%', '70%');
-const xButton = createStyledButton('Follow on X', '5%', '90%');
+const exploreButton = createStyledButton('Explore', '5%', '25%');
+const vrButton = createStyledButton('View in VR', '5%', '40%');
+const joinButton = createStyledButton('Join Community', '5%', '55%');
+const xButton = createStyledButton('Follow on X', '5%', '70%');
+const playButton = createStyledButton('Game Demo ', '5%', '85%');
 
 // Append buttons to the body
 document.body.appendChild(exploreButton);
  document.body.appendChild(vrButton);
  document.body.appendChild(joinButton);
  document.body.appendChild(xButton)
+ document.body.appendChild(playButton)
 // document.body.appendChild(vrButton.createButton(renderer));
 // Adjust button styles for responsiveness
 const adjustButtonStyles = () => {
   const screenWidth = window.innerWidth;
 
   if (screenWidth < 768) { // Mobile screens
-      [xButton, joinButton ,vrButton, exploreButton].forEach((button, index) => {
+      [playButton,xButton, joinButton ,vrButton, exploreButton].forEach((button, index) => {
           button.style.fontSize = '0.9rem';
           button.style.padding = '0.8rem 1.5rem';
           button.style.bottom = `${15 + index * 8.4}%`; // Stack buttons vertically
@@ -539,15 +541,17 @@ const adjustButtonStyles = () => {
       exploreButton.style.bottom = '7%';
       vrButton.style.bottom = '7%';
       xButton.style.bottom = '7%';
+      playButton.style.bottom = '7%';
 
-      joinButton.style.left = '60%';
-      exploreButton.style.left = '20%';
+      joinButton.style.left = '55%';
+      exploreButton.style.left = '25%';
       vrButton.style.left = '40%';
-      xButton.style.left = '80%';
+      xButton.style.left = '70%';
+      playButton.style.left = '85%';
 
-      [joinButton, exploreButton, vrButton, xButton].forEach((button) => {
-          button.style.fontSize = '0.9rem';
-          button.style.padding = '1rem 1.5rem';
+      [joinButton, exploreButton, vrButton, xButton, playButton].forEach((button) => {
+          button.style.fontSize = '0.8rem';
+          button.style.padding = '1rem 1.2rem';
           button.style.transform = 'translateX(-50%)';
       });
   } else { // Desktop screens
@@ -555,15 +559,18 @@ const adjustButtonStyles = () => {
       exploreButton.style.bottom = '5%';
       vrButton.style.bottom = '5%';
       xButton.style.bottom = '5%';
+      playButton.style.bottom = '5%';
 
-      joinButton.style.left = '60%';
+
+      joinButton.style.left = '80%';
       exploreButton.style.left = '20%';
-      vrButton.style.left = '40%';
-      xButton.style.left = '80%';
+      vrButton.style.left = '35%';
+      xButton.style.left = '65%';
+      playButton.style.left = '50%';
 
 
-      [joinButton, exploreButton, vrButton,xButton].forEach((button) => {
-          button.style.fontSize = '1.2rem';
+      [joinButton, exploreButton, vrButton,xButton, playButton].forEach((button) => {
+          button.style.fontSize = '1rem';
           button.style.padding = '1.2rem 2.5rem';
           button.style.transform = 'translateX(-50%)';
       });
@@ -575,6 +582,12 @@ window.addEventListener('resize', adjustButtonStyles);
 
 // Trigger the function initially to set button styles
 adjustButtonStyles();
+
+playButton.addEventListener('click', ()=> {
+
+alert('coming soon')
+})
+
 
 
 
