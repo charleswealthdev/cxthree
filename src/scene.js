@@ -512,24 +512,25 @@ const createStyledButton = (text, positionBottom, positionLeft) => {
 // Create and style buttons
 
 const exploreButton = createStyledButton('Explore', '5%', '25%');
-const vrButton = createStyledButton('View in VR', '5%', '40%');
-const joinButton = createStyledButton('Join Community', '5%', '55%');
-const xButton = createStyledButton('Follow on X', '5%', '70%');
-const playButton = createStyledButton('Game Demo ', '5%', '85%');
+const playButton = createStyledButton('Game Demo ', '5%', '40%');
+const vrButton = createStyledButton('View in VR', '5%', '55%');
+const joinButton = createStyledButton('Join Community', '5%', '70%');
+const xButton = createStyledButton('Follow on X', '5%', '85%');
 
 // Append buttons to the body
 document.body.appendChild(exploreButton);
+ document.body.appendChild(playButton)
  document.body.appendChild(vrButton);
  document.body.appendChild(joinButton);
  document.body.appendChild(xButton)
- document.body.appendChild(playButton)
+
 // document.body.appendChild(vrButton.createButton(renderer));
 // Adjust button styles for responsiveness
 const adjustButtonStyles = () => {
   const screenWidth = window.innerWidth;
 
   if (screenWidth < 768) { // Mobile screens
-      [playButton,xButton, joinButton ,vrButton, exploreButton].forEach((button, index) => {
+      [xButton, joinButton ,vrButton,playButton, exploreButton].forEach((button, index) => {
           button.style.fontSize = '0.9rem';
           button.style.padding = '0.8rem 1.5rem';
           button.style.bottom = `${15 + index * 8.4}%`; // Stack buttons vertically
@@ -543,11 +544,11 @@ const adjustButtonStyles = () => {
       xButton.style.bottom = '7%';
       playButton.style.bottom = '7%';
 
-      joinButton.style.left = '55%';
+      joinButton.style.left = '70%'; 
       exploreButton.style.left = '25%';
-      vrButton.style.left = '40%';
-      xButton.style.left = '70%';
-      playButton.style.left = '85%';
+      vrButton.style.left = '55%';
+      xButton.style.left = '85%'; 
+      playButton.style.left = '40%'; 
 
       [joinButton, exploreButton, vrButton, xButton, playButton].forEach((button) => {
           button.style.fontSize = '0.8rem';
