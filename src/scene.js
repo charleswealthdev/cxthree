@@ -182,7 +182,9 @@ stopButton.addEventListener('click', () => {
 // 4. Create a dropdown list for selecting a song
 const songSelector = document.createElement('select');
 songSelector.innerHTML = `
-    <option value="/evolution.mp3">Evolution</option>
+    
+       <option value="/action.mp3">Action it</option>
+       <option value="/evolution.mp3">Evolution</option>
        <option value="/movement-200697.mp3">Movement</option>
          <option value="/echoofsadness.mp3">Echo of Sadness</option>
           <option value="/paperback.mp3">Paperback</option>
