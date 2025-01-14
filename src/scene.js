@@ -46,7 +46,7 @@ const hidePrompt = () => {
 const loadingMessage = document.createElement('div');
 loadingMessage.innerHTML = 'Loading... For the best experience, use a VR headset! 🕶️';
 loadingMessage.style.position = 'absolute';
-loadingMessage.style.top = '50%';
+loadingMessage.style.top = '30%';
 loadingMessage.style.left = '50%';
 loadingMessage.style.transform = 'translate(-50%, -50%)';
 loadingMessage.style.fontSize = '18px';
@@ -124,7 +124,7 @@ function loadAndPlaySong(songPath) {
 
 
 // Default song
-const defaultSong = '/inspiring-african-music-255647.mp3'; // Set default song here
+const defaultSong = '/action.mp3'; // Set default song here
 loadAndPlaySong(defaultSong);
 
 // 2. Create a container for the music controls
@@ -183,8 +183,6 @@ stopButton.addEventListener('click', () => {
 const songSelector = document.createElement('select');
 songSelector.innerHTML = `
     <option value="/evolution.mp3">Evolution</option>
-    <option value="/birthofahero.mp3">Birth of a Hero</option>
-    <option value="/newfrontier.mp3">New Frontier</option>
        <option value="/movement-200697.mp3">Movement</option>
          <option value="/echoofsadness.mp3">Echo of Sadness</option>
           <option value="/paperback.mp3">Paperback</option>
@@ -585,7 +583,7 @@ adjustButtonStyles();
 
 playButton.addEventListener('click', ()=> {
 
-alert('coming soon')
+  window.open('https://demovr.vercel.app', '_blank')
 })
 
 
@@ -597,7 +595,7 @@ alert('coming soon')
     })
 
     joinButton.addEventListener('click', () => {
-      window.open('https://chat.whatsapp.com/L64NIIlm9gKGehkky4wZp0', '_blank');
+      window.open('https://t.me/walletairdrops', '_blank');
     });
 
  // Explore button click listener
@@ -605,7 +603,6 @@ exploreButton.addEventListener('click', () => {
   if (isFirstClick) {
       // Show the interaction prompt once after clicking "Explore"
       interactionPrompt.style.display = 'block';
-
       // Hide the interaction prompt after a delay
       setTimeout(() => {
           interactionPrompt.style.opacity = '0';
