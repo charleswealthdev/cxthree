@@ -512,7 +512,7 @@ const createStyledButton = (text, positionBottom, positionLeft) => {
 // Create and style buttons
 
 const exploreButton = createStyledButton('Explore', '5%', '25%');
-const playButton = createStyledButton('Game Demo ', '5%', '40%');
+const playButton = createStyledButton('Play Game ', '5%', '40%');
 const vrButton = createStyledButton('View in VR', '5%', '55%');
 const joinButton = createStyledButton('Join Community', '5%', '70%');
 const xButton = createStyledButton('Follow on X', '5%', '85%');
@@ -586,7 +586,8 @@ adjustButtonStyles();
 
 playButton.addEventListener('click', ()=> {
 
-  window.open('https://demovr.vercel.app', '_blank')
+  window.open('https://demov2-iota.vercel.app', '_blank')
+  sound.stop()
 })
 
 
